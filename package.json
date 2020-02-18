@@ -18,11 +18,11 @@
       
     "Mode-dev":"==============Branch dev==============",
 
-     "watch-dev" : "node-sass sass/main.scss css/style.comp.css -w",
+     "watch-dev" : "node-sass sass/main.scss css/style.prefix.css -w",
      "start:dev" : "concurrently  \"npm run server:prod\" \"npm run watch-dev\"",
      "compiler:sass": "node-sass sass/main.scss css/style.comp.css",
-     "prefix:css": "postcss css/style.concat.css --use autoprefixer -o css/style.prefix.css",
-     "concat:css": "concat -o css/style.prefix.css css/all.css css/style.comp.css",
+     "concat:css": "concat -o css/style.concat.css css/all.css css/style.comp.css",
+     "prefix:css": "postcss css/style.prefix.css --use autoprefixer -o css/style.concat.css",
      "building-dev": "npm-run-all compiler:sass concat:css prefix:css",
 
     "fin-dev":"==============Branch dev==============",

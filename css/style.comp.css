@@ -66,11 +66,11 @@ body {
     font-size: 1.7rem; }
 
 .story__pictures {
-  background-color: #aaa;
+  background-color: white;
   grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: #54483A;
+  background-color: white;
   grid-column: col-start 5 / full-end; }
 
 .homes {
