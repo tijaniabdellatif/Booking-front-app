@@ -40,7 +40,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 6rem; }
   .features__feature {
-    background-color: red; }
+    background-color: black; }
 
 .story__pictures {
   background-color: #aaa;

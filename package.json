@@ -8,7 +8,7 @@
     
     "Mode-production":"==============Branch Prod==============",
 
-    "watch:sass:prod": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass:prod": "node-sass sass/main.scss  -w",
     "server:prod": "live-server --port=8181 --browser=firefox",
     "start:prod": "concurrently  \"npm run server:prod\" \"npm run watch:sass\"",
     "prefix:css": "postcss css/style.concat.css --use autoprefixer -o css/style.prefix.css",
