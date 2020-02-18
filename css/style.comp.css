@@ -39,8 +39,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 6rem; }
-  .features__feature {
-    background-color: black; }
 
 .story__pictures {
   background-color: #aaa;

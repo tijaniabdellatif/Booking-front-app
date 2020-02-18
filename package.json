@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     
-    
     "Mode-production":"==============Branch Prod==============",
 
-    "watch:sass:prod": "node-sass sass/main.scss  -w",
-    "server:prod": "live-server --port=8181 --browser=firefox",
+    "watch:sass:prod": "node-sass sass/main.scss css/style.css -w",
+    "server:prod": "live-server --port=8181 --browser=chrome",
     "start:prod": "concurrently  \"npm run server:prod\" \"npm run watch:sass\"",
     "prefix:css": "postcss css/style.concat.css --use autoprefixer -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
@@ -17,15 +16,14 @@
 
     "fin-production":"===========================================",
 
-
       
     "Mode-dev":"==============Branch dev==============",
 
      "watch-dev" : "node-sass sass/main.scss css/style.comp.css -w",
      "start:dev" : "concurrently  \"npm run server:prod\" \"npm run watch-dev\"",
      "compiler:sass": "node-sass sass/main.scss css/style.comp.css",
-     "concat:css": "concat -o css/style.concat.css css/font-awesome.css css/style.comp.css",
-     "building-dev": "npm-run-all compiler:sass",
+     "concat:css": "concat -o css/style.concat.css css/all.css css/style.comp.css",
+     "building-dev": "npm-run-all compiler:sass concat:css",
 
     "fin-dev":"==============Branch dev=============="
 
