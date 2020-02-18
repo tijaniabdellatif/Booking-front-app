@@ -24,6 +24,19 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-2 {
+  font-size: 4em;
+  font-style: italic; }
+  .heading-2--light {
+    color: #f9f7D9; }
+  .heading-2--dark {
+    color: #54483A; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #c69963;
+  text-transform: uppercase; }
+
 .heading-4 {
   font-size: 2rem; }
   .heading-4--light {
@@ -70,8 +83,8 @@ body {
   grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: black;
-  grid-column: col-start 5 / full-end; }
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 12rem; }
 
 .homes {
   background-color: red;
