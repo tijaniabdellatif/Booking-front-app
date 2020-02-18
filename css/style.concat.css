@@ -4471,7 +4471,7 @@ readers do not read off random characters that represent icons */
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 70%; }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -4483,6 +4483,17 @@ body {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-4 {
+  font-size: 2rem; }
+  .heading-4--light {
+    color: #f9f7D9; }
+  .heading-4--dark {
+    color: #54483A; }
 
 .sidebar {
   background-color: #c69963;
@@ -4501,8 +4512,22 @@ body {
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6rem; }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start; }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+  .feature__icon {
+    color: #c69963;
+    font-size: 4rem;
+    grid-row: 1 / span 2;
+    transform: translate(-2rem); }
+  .feature__text {
+    font-size: 1.7rem; }
 
 .story__pictures {
   background-color: #aaa;
