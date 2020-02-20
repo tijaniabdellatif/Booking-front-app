@@ -30,8 +30,9 @@
         "start:deploy": "concurrently  \"npm run server:prod\" \"npm run watch-deploy\"",
         "deploying-app": "npm-run-all building-dev building-prod",
         "fin-deploying": "==============Branch dev==============",
-
-        "deploy-github": "gh-pages -d dist"
+         
+       
+        "deploy": "gh-pages -d dist"
 
 
     },
