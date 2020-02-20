@@ -37,7 +37,7 @@
     },
     "author": "",
     "license": "ISC",
-    "home":"https://tijaniabdellatif.github.io/Booking-front-app",
+    "home":"https://tijaniabdellatif.github.io/Booking",
     "devDependencies": {
         "autoprefixer": "^9.7.4",
         "concat": "^1.0.3",
