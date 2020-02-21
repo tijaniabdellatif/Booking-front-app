@@ -1,0 +1,59 @@
+@mixin abscenter{
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform : translate(-50%,-50%)
+}
+
+
+.popup{
+
+    height:100vh;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.8);
+    z-index:9999;
+
+&__content{
+      
+     @include abscenter;
+     width:75%;
+     height:50rem;
+     background-color: #fff;
+     box-shadow: 0 2rem 4rem rgba(0,0,0,.2);
+     border-radius: 3px;
+}
+
+&__left{
+
+    width:33,333333%;
+    float:left;
+
+    
+
+}
+
+&__right{
+
+    width:66.6666667%;
+    float:left;
+
+} 
+
+&__img{
+
+    display:block;
+    max-width:100%;
+    height:calc(100vh-50px);
+
+
+}
+
+&__text{
+
+}
+
+}
