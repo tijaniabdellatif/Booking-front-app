@@ -32,7 +32,7 @@
         "Hebergement":"=====================================",
               "deploy": "gh-pages -d dist",
         "fin-Hebergement":"/=====================================/"
-
+ 
     },
     "author": "",
     "license": "ISC",
